@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Coaching – Ernährung | Sport | Mindset</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Ganzheitliches Online Coaching</h1>
+            <p>Ernährung. Bewegung. Mindset.</p>
+            <a href="#kontakt" class="btn">Jetzt starten</a>
+        </div>
+    </header>
+
+    <section class="section fade-in">
+        <div class="container">
+            <h2>Dein Weg zu mehr Balance</h2>
+            <p>Individuelles Coaching für Menschen, die Körper & Geist in Einklang bringen wollen – mit smarter Ernährung, gesunder Bewegung und mentaler Stärke.</p>
+        </div>
+    </section>
+
+    <section class="angebote section fade-in">
+        <div class="container">
+            <div class="angebot">
+                <h3>Ernährungscoaching</h3>
+                <p>Ohne Diätstress. Mit Genuss und Klarheit.</p>
+            </div>
+            <div class="angebot">
+                <h3>Bewegung & Gesundheit</h3>
+                <p>Sanftes Training, funktionelle Fitness und Alltagstauglichkeit.</p>
+            </div>
+            <div class="angebot">
+                <h3>Mentales Training</h3>
+                <p>Mindset-Arbeit für Fokus, Motivation und echte Veränderung.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="section fade-in">
+        <div class="container">
+            <h2>Jetzt Erstgespräch vereinbaren</h2>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="E-Mail" required>
+                <textarea placeholder="Wie kann ich dir helfen?" required></textarea>
+                <button type="submit">Absenden</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Dein Coaching – Alle Rechte vorbehalten</p>
+    </footer>
+
+    <script>
+        // Sanfter Fade-In beim Scrollen
+        const faders = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        faders.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
